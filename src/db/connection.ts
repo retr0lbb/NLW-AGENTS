@@ -1,15 +1,10 @@
-/** biome-ignore-all lint/suspicious/noConsole: Logging */
+import { drizzle } from 'drizzle-orm/postgres-js';
 import postgres from 'postgres';
 import { env } from '../env.js';
+import { schema } from './schema/index.js';
 
-let connection: postgres.Sql;
-
-export function requestDatabaseConnection() {
-  if (!connection) {
-    connection = postgres(env.DATABASE_URL);
-    console.log('nao existe conexao com base de dados');
-  }
-  console.log('existe conn');
-
-  return connection;
-}
+export const sql = postgres(env.DATABASE_URL);
+export const db = drizzle(sql, {
+  schema,
+  casing: 'snake_case',
+});
