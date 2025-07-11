@@ -12,6 +12,7 @@ async function seedDb() {
         rooms: {
           count: 20,
           columns: {
+            id: f.uuid(),
             name: f.companyName(),
             description: f.loremIpsum(),
           },
