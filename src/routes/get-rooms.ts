@@ -1,4 +1,4 @@
-/** biome-ignore-all lint/suspicious/useAwait: <explanation> */
+/** biome-ignore-all lint/suspicious/useAwait: wrong role */
 import type { FastifyPluginCallbackZod } from 'fastify-type-provider-zod';
 import { db } from '../db/connection.ts';
 import { schema } from '../db/schema/index.ts';

@@ -15,6 +15,9 @@ async function seedDb() {
             name: f.companyName(),
             description: f.loremIpsum(),
           },
+          with: {
+            questions: 5,
+          },
         },
       };
     });

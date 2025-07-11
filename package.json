@@ -6,7 +6,9 @@
   "scripts": {
     "start": "tsx --env-file=.env src/server.ts",
     "dev": "tsx watch --env-file=.env src/server.ts",
-    "seed": "tsx --env-file=.env src/db/seed.ts"
+    "db:seed": "tsx --env-file=.env src/db/seed.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
   },
   "keywords": [],
   "author": "",

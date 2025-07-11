@@ -8,6 +8,13 @@
       "when": 1752207039637,
       "tag": "0000_breezy_ghost_rider",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1752267961897,
+      "tag": "0001_crazy_captain_stacy",
+      "breakpoints": true
     }
   ]
 }
