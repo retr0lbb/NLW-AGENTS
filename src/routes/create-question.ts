@@ -71,7 +71,9 @@ export const createQuestionRoute: FastifyPluginCallbackZod = async (app) => {
         })
         .returning();
 
-      return reply.status(200).send({ question: createdQuestion });
+      return reply
+        .status(200)
+        .send({ questionId: createdQuestion[0].id, answer });
     }
   );
 };
