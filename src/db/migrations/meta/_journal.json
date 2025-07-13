@@ -15,6 +15,13 @@
       "when": 1752267961897,
       "tag": "0001_crazy_captain_stacy",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1752370247424,
+      "tag": "0002_cultured_wolfpack",
+      "breakpoints": true
     }
   ]
 }
